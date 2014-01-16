@@ -1,0 +1,258 @@
+% Template for NIME 2014
+%
+% Modified by Baptiste Caramiaux on 25 November 2013
+% Modified by Kyogu Lee on 7 October 2012
+% Modified by Georg Essl on 7 November 2011
+%
+% Based on "sig-alternate.tex" V1.9 April 2009
+% This file should be compiled with "nime2011.cls"
+%
+
+\documentclass{nime-alternate}
+
+\begin{document}
+%
+% --- Author Metadata here ---
+\conferenceinfo{NIME'14,}{June 30 -- July 03, 2014, Goldsmiths, University of London, UK.}
+
+\title{VOCAL VIBRATIONS}
+\subtitle{A Voice Based Multisensory Experience}
+
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{3} %  in this sample file, there are a *total*
+
+
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+Ben Trovato\titlenote{Dr.~Trovato insisted his name be first.}\\
+       \affaddr{Institute for Clarity in Documentation}\\
+       \affaddr{1932 Wallamaloo Lane}\\
+       \affaddr{Wallamaloo, New Zealand}\\
+       \email{trovato@corporation.com}
+% 2nd. author
+\alignauthor
+G.K.M. Tobin\titlenote{The secretary disavows
+any knowledge of this author's actions.}\\
+       \affaddr{Institute for Clarity in Documentation}\\
+       \affaddr{P.O. Box 1212}\\
+       \affaddr{Dublin, Ohio 43017-6221}\\
+       \email{webmaster@marysville-ohio.com}
+% 3rd. author
+\alignauthor Lars Th{\o}rv{\"a}ld\titlenote{This author is the
+one who did all the really hard work.}\\
+       \affaddr{The Th{\o}rv{\"a}ld Group}\\
+       \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
+       \affaddr{Hekla, Iceland}\\
+       \email{larst@affiliation.org}
+\
+}
+% There's nothing stopping you putting the seventh, eighth, etc.
+% author on the opening page (as the 'third row') but we ask,
+% for aesthetic reasons that you place these 'additional authors'
+% in the \additional authors block, viz.
+
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+
+
+
+
+\maketitle
+\begin{abstract}
+
+Vocal Vibrations is an installation aiming to raise awareness of the influence of the voice on our body and environment by enabling anyone to control a rich multi-sensory experience only with his or her voice. 
+The technical and design challenges were an opportunity for Machover’s Opera of the Future group at the Media Lab to tackle many questions related to voice and it’s connection with the body. 
+On an original musical piece and musical material composed by Tod Machover. 
+
+Paper looks at the technical and compositional challenges 
+choices made with regard to the mapping
+forms of expressivity arising out of interactive work
+System Java signal processing system sends by OSC the real time result of analysis to a high level mapping system which turns the low level extracted features into high level quality parameters. Those qualities of vocal gesture are then sent to a Max/MSP patch containing the mapping of the sound system (composition choices, samples, localisation, effects) and the ORB (behavious, localisation, rhythm)
+
+Extended vocal techniques (Sprechgesang, inhaling, tremolo, overtones, changing shape of the mouth) as well as non voiced sounds (breathing, inhaling, withering, whispering)
+
+
+%The abstract should preferably be between 100 and 200 words.
+\end{abstract}
+
+\keywords{NIME, proceedings, \LaTeX, template}
+
+\section{Introduction : VOCAL VIBRATIONS}
+the goal(s), partners (Le Labo, Dalai Lama center, Neri’s group)
+\subsection{The Voice: A Personal Instrument}
+
+With the VOCAL VIBRATIONS multisensory installation, we are creating new types of vocal experiences that draw from and extend traditional contemplative practices to help people explore different meditative states guided by their own voice. This project targets people with or without singing experience and aims to make the participant experiment with the wide range of sounds, vibrations, effects and mental states that their own voice can guide them into. Because it is intimately linked to our body, shape and mental state, the voice is highly individual and personal. Its range of expressivity is also potentially infinite. Even though most of us possess this personal organic instrument, many people do not feel comfortable “singing” and do not imagine they could one day participate in a rich musical vocal experience. To address this, we are developing techniques to engage the public in the regular practice of thoughtful singing and vocalizing, both as an individual experience and as part of a community. This project is the result of a collaboration between Tod Machover’s Opera of the Future group, the Dalaï Lama center for Ethics and Transformative Values (MIT), Le Laboratoire (Paris) and designer Neri Oxman.
+
+
+
+\subsection{The public: novices / professionals}
+
+One of the challenges of this project is to help novices discover the potential of their voice while providing them with a forward/direct access to the beauty of a complete.full musical experince. Indeed, by the simplest use of their voice - holding one single note - the user can already be part of a complex vocal performance and have an active role to shape the musical result. If the interactivity is constrained by composition choices, choice of musical material and uphill mapping decisions; it remains that there is no right or wrong way to use the system. The system accompanies the user’s voice as opposed to people having to adapt to the system. 
+This entry gate to the voice as provided by the vibrations then produced on the body also has the potential to help trained singers to get to understand their instrument better. Vocal coaches, singers, and voice professionals have very rich terminology to characterize different voices. However, because the vocal apparatus is hidden from sight, the vocabulary used is often very abstract and hard to grasp for the non-initiated (Latinus and Belin, 2011). The focus provided by the tactile and physical feedback can help to give a very intimate/personal though universal/absolute/objectif access to the voice.
+
+
+\subsection{meditation focuss and health}
+
+The philosophy and orientations of the project draw on ancestral traditions of chanting and mantras. The relaxation and meditation potential that the voice provide has not yet been studied thoroughly…
+
+The Vocal Vibrations installation will premiere at Le Laboratoire in Paris in March 2014. By the engagement and experience of the (active) audience, we will determine to what extent the experience’s flow, technologies and interactions allow the public to feel engaged. The design of the installation will include preparation stages of testing the system on peers and iteration on it. Discussions and assessment will revolve around the quality of the overall experience, the reactivity of the system, the feeling of connection and control, the coherence of the experience’s flow and we will measure how much it helps people explore beyond the normal use of their voice (by measuring the pitch range, the rhythm, the richness and variety of the sounds voiced, etc). We believe that the orchestration of the March installation will also reveal the weakness and strength of the overall experience. From those observations, we will improve it in the preparation of a second installation in Cambridge in fall 2014.
+
+
+\section{CONTEXT : NEW VOICE BASED EXPERIENCE/ SYSTEMS}
+
+vibration, voice, interactive music
+
+HEALTH, experience for novices
+
+The use of voice is generally a goal-directed activity more than an exploration based journey. All the complex psychomotor sub processes are activated without conscious dissociation (Ladefoged, 1992). Yet, neurological research supports the idea that the brain dissociates voice from speech when processing vocal information. In terms of physical processes involved, and because it requires a perfect psychomotor synchronization (between the breath, the tongue, the vocal track muscles, the tension of the vocal folds, the lips, etc) the study of the voice can sometimes reveal a lot about a person’s health and mental state (Schimer, 2004).
+
+Skinscape (Eric Gunther, 2001) is a tool for composition in the tactile modality. Inspired by knowing whether “the skin [is] capable of understanding and ultimately appreciating complex aesthetic information”, this work tackles the relatively uncharted field of tactile composition. The system is based on previous knowledge of tactile illusion, subjective magnitude, adaptation, spatial resolution, psychophysical factors and deduces from those the different parameters important for tactile composition.
+Relevance: This work is very relevant for the Vocal Vibrations project. In our work, we remind the audience that the use of the tactile modality is motivated first by the intrinsic existence of body vibration during vocalization and the ancestral traditions and knowledge on the consequences of those vibrations on the physiology. Secondly our work is motivated by the knowledge that our auditory senses have an automatic action of filtering out our own voice, which makes us think that hearing our own voice and the consequences are really relegated out of the cognitive domain to the unconscious level. From those, the idea of shifting to another modality that would be localized, egocentric and visceral could help being aware of the omnipresence of our voice, the acceptation of it and provide a way for people to “tune” in to themselves.
+
+\section{THE SYSTEM}
+
+\subsection{The User Experience/ the flow}
+
+The user first arrives in a communal room with surround sounds. All the audio would be based on recordings of voices that would be mixed and localized in the room. Individually, the user will be approached by an assistant who will bring him/her to a smaller room. The assistant will then help adjust the headphones and engage the participant to voice one note. He will help the user to find a comfortable note. This step will help the user get used to the note and will also “tune” the system to the person’s voice and specific note. The user will then be brought to another room containing one special chair (the chair will be an art piece designed by Neri Oxman specifically for this project). The assistant will invite the user to sit, give him/her the orb to hold and then leave the room. From here, both the sound played in the headphones and the behavior of the orb will be closely tied to everything the user will be voicing. The audio will be an interactive piece composed by Tod Machover with a fixed structure but a free flow and composition that will be controlled by the user. The mapping of the ORB will also change throughout the experience. At different points in time, very short sentences will appear on a screen to invite the user to interact in a particular way (“like the surrounding sound”, “in a unexpected way”...) At the end of the 5 min experience, another assistant will bring the user into a different room, called the chapel where the surrounding sound will be similar to the previous experience but non-interactive. In the chapel, people can stay as long as they want and they are encouraged to vocally take part with the music.
+
+
+\subsection{The Chapel}
+
+\subsubsection{The Music Piece}
+Recording sessions
+Sarah, Blue Heron, type of music, accompaniment
+
+\subsubsection{Sound Localisation}
+architecture, sounding, speakers
+
+\subsection{The Audio Interactive Experience}
+\subsubsection{Training}
+From the Chapel, the user is guided by an assistant into the interactive experience. Follows a short “training” session in which the user is given headphones. The training consists in helping the user doing the first step into the production of vocal sound. The assistant first assess the frequency range or the user’s voice and then give him the D in the most appropriate octave. The user is asked to hold the D and is advised to start exploring on different vowels, sounds, textures. The user is then installed on the chair and being given the ORB to hold.
+ 
+\subsubsection{Flow  (and Intention?)}
+User interface is simply a microphone and hearphones. The interactive piece has it’s own flow and timing consisting of...
+
+\subsubsection{Vocal Processing}
+For the system to be interactif, the first step was to extract a certain number of control parameters as well as the raw signal from the voice. First of all, as the user vocalize in a microphone, the raw signal of his/ her voice is used in real time as part of the behavious or the ORB. The control parameters we choose to extract are: pitch, loudness, linearly averaged frequency spectrum and harmonicity. They are computed by spectral analysis. The variations of those parameters…
+What parameters makes sense? feeling the instinctive, immediate connection, 
+Basic Prosody: laudness, pitch, tempo, harmonicity, noisiness, 
+
+\subsubsection{Interactivity}
+
+\subsection{The orb}
+
+As part of this project, we are building the Oral Resonance Ball (ORB), a voice-activated vibrating device, which maps the voice signal into tactile vibrating sensations. This device provides awareness of physical processes involved in the vocal production process by giving feedback and enhancing the vibrations produced in the person’s body. Because fingertips contain more sensor receptors than our vocal vibrating chamber, holding the ORB while vocalizing gives access to elements of individuality and affectivity that often remain latent in the everyday experience of voice (Kitamura, Hamdorf, 2001; S. S. Stevens, 1968).
+
+Idea: exteriorisation of the voice, feeling of connexion
+
+SYSTEM DESIGN
+The system extracts audio features from the person’s voice in real time and a complex mapping system uses them to control the dynamics and localization of the vibrations in the device.
+Digital Signal Processing part in charge of the real time extraction of features from people’s voice that will then control the whole reactive system.
+Engaging with the voice as one engage with an instrument 
+Fingertips are one of the densest skin zone in terms of sensing nerves
+
+The skin’s sensing nerves are most densely collected in the lips and hands (Joseph Rovan). allows for the maximum amount of information exchange
+
+
+
+
+\subsubsection{Hardware}
+
+System: 5 transducers, a shell, amplifiers, control from computer
+material of the shell: want maximum of tactile effect with minimim of sound comming out of it. 
+Testing with different materials (vibrations tactiles but not sound) 
+Size and shape, weight, texture
+Soon testing more materials
+
+
+\subsubsection{Dynamism/ Behaviour/ Localisation/ Texture}
+
+\subsubsection{Possible modes?}
+Different modes of interaction can be envisioned with this device. The user can experience it either in real time with his own voice by simply holding the ORB while verbalizing into a microphone. The orb can also display the voice of somebody talking to you in real time. Or it can play back a recording. When it comes to experiencing your own voice in real time through the orb, I would be interested to evaluate if and how the user modifies his voice because of the new feedback. For the situation of experiencing somebody else’s voice either with the display (visual?) in real time or through a recording, I will evaluate whether the identity and intentions of the speaking person are still determinable. I will also explore different form factors, shapes and ways to hold the orb to determine how to make the interaction even more compelling.
+
+
+\subsection{Measuring Vibrations}
+
+
+\section{Future directions}
+
+\section{Conclusions}
+This paragraph will end the body of this sample document.
+Remember that you might still have Acknowledgments or
+Appendices; brief samples of these
+follow.  There is still the Bibliography to deal with; and
+we will make a disclaimer about that here: with the exception
+of the reference to the \LaTeX\ book, the citations in
+this paper are to articles which have nothing to
+do with the present subject and are used as
+examples only.
+%\end{document}  % This is where a 'short' article might terminate
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+This section is optional; it is a location for you
+to acknowledge grants, funding, editing assistance and
+what have you.  In the present case, for example, the
+authors would like to thank Gerald Murray of ACM for
+his help in codifying this \textit{Author's Guide}
+and the \textbf{.cls} and \textbf{.tex} files that it describes.
+
+\section{References}
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{nime-VV}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+
+
+
+\end{document}
